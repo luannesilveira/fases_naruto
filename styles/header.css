@@ -11,6 +11,17 @@ header{
 
 }
 
+
+@media(max-width: 600px) {
+    header {
+      padding: 0 24px;
+    }
+  
+    header img {
+      height: auto;
+    }
+  }
+
 #menu{
     display: flex;
     flex-direction: column;
@@ -23,6 +34,12 @@ header{
     background: transparent;
 }
 
-#menu:hover { /*ao passar o mouse pelo menu */
+button img { /*ao passar o mouse pelo menu */
+    filter: grayscale(1);
+}
+
+button:hover img { /*ao passar o mouse pelo menu */
     cursor: pointer;
+    filter: grayscale(0);
+    transform: translateY(10px);
 }

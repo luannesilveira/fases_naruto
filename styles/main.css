@@ -24,6 +24,10 @@ main div button {
     transition: opacity 0.4s;
 }
 
+main div button:hover { 
+    cursor: pointer;
+}
+
 main div button:disabled {
     opacity: 0.4;
 }
@@ -39,7 +43,81 @@ main div button svg path {
     
     color: transparent;
     font-family: 'Star Guard Italic';
+    padding-right: 10px;
+}
 
+@media(max-width: 1024px) {
+    #member__name {
+      font-size: 120px;
+      letter-spacing: 3px;
+      padding-right: 8px;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    main {
+      row-gap: 20px;
+    }
+  
+    #member__name {
+      font-size: 100px;
+      line-height: 80px;
+      padding-right: 6px;
+    }
+  
+    main div button { 
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  @media(max-width: 600px) {
+    main {
+      width: 100%;
+      overflow: hidden;
+      align-self: center;
+      align-items: center;
+      row-gap: 10px;
+    }
+  
+    #member__name {
+      text-align: center;
+      font-size: 72px;
+      line-height: 70px;
+      letter-spacing: 1px;
+    }
+  
+    main div { 
+      column-gap: 8px;
+    }
+  }
+  
+  #member__name.crianca {
     background: var(--crianca);
     -webkit-background-clip: text;
-}
+  }
+  
+  #member__name.adolescente {
+    background: var(--adolescente);
+    -webkit-background-clip: text;
+  }
+  
+  #member__name.senin {
+    background: var(--senin);
+    -webkit-background-clip: text;
+  }
+  
+  #member__name.kurama {
+    background: var(--kurama);
+    -webkit-background-clip: text;
+  }
+  
+  #member__name.adulto {
+    background: var(--adulto);
+    -webkit-background-clip: text;
+  }
+  
+  #member__name.hokage {
+    background: var(--hokage);
+    -webkit-background-clip: text;
+  }

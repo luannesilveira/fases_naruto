@@ -14,18 +14,20 @@
 
 :root {
   --text: #EDF1F7;
+  
   --image-shadow: radial-gradient(100% 100% at 50% 1.43%, rgba(22, 21, 21, 0), rgba(22, 21, 21, 0.9) 80%);
-  --crianca: linear-gradient(45deg, #1123e3c1 40%, #ff7c00 80%);
-  --adolescente: linear-gradient(45deg, #44ad3a 30%, #ce0b0b 85%);
-  --senin: linear-gradient(45deg, #fe0000 10%, #ff7c00 70%);
-  --adulto: linear-gradient(45deg, #000000, #ff7c00 90%);
-  --kurama: linear-gradient(45deg, #fee800, #eb9125);
-  --hokage: linear-gradient(45deg, #c22525 22%, #ffffff);
+ 
+  --crianca: linear-gradient(45deg, #1123e3c1 5%,  #ffffff);
+  --adolescente: linear-gradient(45deg, #dc601e 10%, #ffffff);
+  --senin: linear-gradient(45deg, #fe0000 80%, #dc601e 10%);
+  --kurama: linear-gradient(45deg, #dc601e 10%, #fceb2a 90%);
+  --adulto: linear-gradient(45deg, #fee800, #fe0000, #ffffff);
+  --hokage: linear-gradient(45deg, #c22525 5%, #ffffff, #fceb2a 90%);
 }
 
 body {
   overflow: hidden;
-  color: var(--text);
+  color: var(--text);SSS
   font-family: 'Rubik', sans-serif;
 }
 
@@ -38,4 +40,16 @@ body {
   height: 100vh;
   
   padding: 48px 80px 80px;
+}
+
+@media(max-width: 1024px) {
+  .app {
+    padding: 40px;
+  }
+}
+
+@media(max-width: 600px) {
+  .app {
+    padding: 24px 0 40px;
+  }
 }

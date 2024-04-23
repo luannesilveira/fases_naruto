@@ -21,6 +21,7 @@
 }
 
 #images {
+    width: 100vw;
     position: absolute;
     transition: all 0.8s; 
 }
