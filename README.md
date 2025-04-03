@@ -10,6 +10,8 @@
 
 Site sobre as fases do Uzumaki Naruto.
 
+Clique [aqui](https://fases-naruto.netlify.app/) e veja como ficou!
+
 ## Tecnologias Utilizadas
 
 - HTML
